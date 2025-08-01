@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your paragraph❤😚</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+ 
+
+<style>
+    button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #000000;
+  color: white;
+  border: none;
+  transition: transform 0.2s ease;
+  
+}
+
+body {
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+button:hover {
+  background: #000000;
+  transform: scale(1.05);
+}
+
+</style>
+ <body>
+
+  <header>
+    <div>For you My love 
+
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="contactus.html">About us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="love">
+        <p> My love, as our relationship turns one year old on 7 August, I just want to remind you of something I see every single day how incredibly beautiful you are, in ways that words often fail to express. Your beauty goes far beyond what anyone sees on the outside; it is in your gentle heart, your pure intentions, and your ability to care so deeply even when life feels heavy. Every time I look at you, I feel grateful that God chose you for me because you are everything I prayed for and even more than I ever imagined. You light up every moment of my day with your smile, your laughter, and your sweet words that bring me peace no matter what I’m facing. You have this rare kind of beauty that calms my spirit, a beauty that is humble yet so powerful it changes my mood the instant I hear your voice. I love the way your eyes brighten when you talk about things you love, the way your kindness radiates in your actions, and the way you never fail to make me feel like I matter. Being with you has taught me what genuine love feels like love that is peaceful, safe, deep, and honest. I want you to know that I truly care about you beyond words; your happiness, peace of mind, and dreams are always important to me. I want to be the one who makes you smile on your hard days, who supports you silently when you feel weak, and who celebrates your little and big victories with pride. You are beautiful to me when you wake up tired, when you are dressed up perfectly, when you’re in your quiet moods, and when you’re full of energy. You are simply beautiful in all your forms. As we mark one year of loving each other, I promise you this: my love will remain genuine, my words will remain honest, and my intentions will always be to see you grow into the woman you desire to be. Thank you for loving me, for choosing me, and for showing me what real love feels like. I pray this is only the first year of many more beautiful, peaceful, and love-filled years to come with you, my forever beautiful girl.</p>
+    </div>
+    <audio id="customSpeech">
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<button onclick="playCustomSpeech()">🔊 Read Aloud</button>
+<button onclick="pauseSpeech()">⏸️ Pause</button>
+<button onclick="resumeSpeech()">▶️ Resume</button>
+<button onclick="stopSpeech()">⏹️ Stop</button>
+
+<script>
+  function playCustomSpeech() {
+    const audio = document.getElementById("customSpeech");
+    audio.play();
+  }
+
+  function pauseSpeech() {
+    const audio = document.getElementById("customSpeech");
+    if (!audio.paused) {
+      audio.pause();
+    }
+  }
+
+  function resumeSpeech() {
+    const audio = document.getElementById("customSpeech");
+    if (audio.paused) {
+      audio.play();
+    }
+  }
+
+  function stopSpeech() {
+    const audio = document.getElementById("customSpeech");
+    audio.pause();
+    audio.currentTime = 0;
+  }
+</script>
+
+
+
+  </main>
+  <footer>
+    Copyright © | All rights reserved to EarthTonik
+  </footer>
+    
+</body>
+</html>
